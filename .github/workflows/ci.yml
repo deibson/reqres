@@ -2,9 +2,9 @@ name: Test
 
 on:
   push:
-    branches: [ $default-branch ]
+    branches: [ main ]
   pull_request:
-    branches: [ $default-branch ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -21,3 +21,6 @@ jobs:
           cache: maven
       - name: Build Maven
         run: mvn -B package --file pom.xml
+      - name: Run Test
+        run: mvn test
+
