@@ -22,5 +22,7 @@ jobs:
       - name: Build Maven
         run: mvn -B package --file pom.xml
       - name: Run Test
-        run: mvn -Dtest=CreateUser#createUser test
+        run: mvn -Dtest=CreateUserTest#createUser test
+      - name: Run Test
+        run: mvn -Dtest=CreateUserContractTest#createUserContract test
 

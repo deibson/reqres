@@ -3,7 +3,8 @@
 <suite name="Suite" parallel="classes" thread-count="2">
 <test name="Create">
     <classes>
-        <class name="in.reqres.CreateUser" />
+        <class name="in.reqres.CreateUserTest" />
+        <class name="in.reqres.CreateUserContractTest" />
     </classes>
 </test>
 </suite>
